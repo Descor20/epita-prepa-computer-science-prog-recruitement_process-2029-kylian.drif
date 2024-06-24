@@ -36493,24 +36493,26 @@
                                 An empty <code>README</code>
                             </div>
                         </div>
-                        </div>
-                        <br>
-                        <div class=card>
-                        <div class="card-header danger-header">
-                            <div class=card-title-format>Subject errors</div>
-                        </div>
-                        <div class="card-body danger-body">
-                            <div class=card-text>
-                                While reading the subject, the attributs of the given files won't have the same look.<br>
-                                This is to avoid any warning to the compilation, use the skeleton structure. The correction
-                                will use the same structure.<br>
-                                <br>
-                                This is the only warning of the subject that can contredict the rule : The subject is always
-                                right.
-                            </div>
-                        </div>
-                </div>
+                    </div>
                     <br>
+                </div>
+                <br>
+                <div class=card>
+                <div class="card-header danger-header">
+                    <div class=card-title-format>Subject errors</div>
+                </div>
+                <div class="card-body danger-body">
+                    <div class=card-text>
+                        While reading the subject, the attributs of the given files won't have the same look.<br>
+                        This is to avoid any warning to the compilation, use the skeleton structure. The correction
+                        will use the same structure.<br>
+                        <br>
+                        This is the only warning of the subject that can contredict the rule : The subject is always
+                        right.
+                    </div>
+                </div>
+        </div>
+<br>
                     <div class=card>
                         <div class="card-header success-header">
                             <div class=card-title-format>Authorized things (classes, interfaces, enums, methods, ...)</div>
@@ -36530,7 +36532,25 @@
                                         <code>using System.Collections.Generic</code>
                                     </li>
                                     <li>
+                                        <code>using System.Diagnostics</code>
+                                    </li>
+                                    <li>
                                         <code>using System.IO</code>
+                                    </li>
+                                    <li>
+                                        <code>System.Action &lt;object &gt;</code>
+                                    </li>
+                                    <li>
+                                        <code>System.ArgumentException</code>
+                                    </li>
+                                    <li>
+                                        <code>System.Collections.Generic.IEnumerable &lt;char &gt;</code>
+                                    </li>
+                                    <li>
+                                        <code>System.Collections.Generic.IEnumerable &lt;int &gt;</code>
+                                    </li>
+                                    <li>
+                                        <code>System.Collections.Generic.IEnumerator &lt;char &gt;</code>
                                     </li>
                                     <li>
                                         <code>System.Collections.IEnumerable</code>
@@ -36539,13 +36559,34 @@
                                         <code>System.Collections.IEnumerator</code>
                                     </li>
                                     <li>
-                                        <code>System.ArgumentException</code>
+                                        <code>System.DateTime</code>
+                                    </li>
+                                    <li>
+                                        <code>System.Diagnostics.UnreachableException</code>
+                                    </li>
+                                    <li>
+                                        <code>System.Func &lt;object &gt;</code>
+                                    </li>
+                                    <li>
+                                        <code>System.Func &lt;object, object &gt;</code>
+                                    </li>
+                                    <li>
+                                        <code>System.IDisposable</code>
                                     </li>
                                     <li>
                                         <code>System.InvalidOperationException</code>
                                     </li>
                                     <li>
+                                        <code>System.IO.SeekOrigin</code>
+                                    </li>
+                                    <li>
+                                        <code>System.IO.Stream</code>
+                                    </li>
+                                    <li>
                                         <code>System.NotImplementedException</code>
+                                    </li>
+                                    <li>
+                                        <code>System.TimeSpan</code>
                                     </li>
                                 </ul>
                             </div>
@@ -36633,7 +36674,7 @@ obj/
                                     <div class="card-body dark-body">
                                         <div class=card-text>
                                             <pre>
-                                                <code class="hljs csharp">public static List<<code>int</code>> Search_Even_Numbers(int[] array)
+                                                <code class="hljs csharp">public static List<int> Search_Even_Numbers(int[] array)
 {
     throw new NotImplementedException("Not yet implemented");
 }
@@ -36792,7 +36833,7 @@ obj/
                                     <div class="card-body dark-body">
                                         <div class=card-text>
                                             <pre>
-                                                <code class="hljs csharp">public static List<<code>int</code>> Eratosthenes_Sieve(int n)
+                                                <code class="hljs csharp">public static List<int> Eratosthenes_Sieve(int n)
 {
     throw new NotImplementedException("Not yet implemented");
 }
@@ -36948,7 +36989,7 @@ obj/
                                     <div class="card-body dark-body">
                                         <div class=card-text>
                                             <pre>
-                                                <code class="hljs csharp">public static List<<code>String</code>> Decode_species(String message)
+                                                <code class="hljs csharp">public static List<String> Decode_species(String message)
 {
     throw new NotImplementedException("Not yet implemented");
 }
@@ -37003,7 +37044,7 @@ obj/
                                     <div class="card-body dark-body">
                                         <div class=card-text>
                                             <pre>
-                                                <code class="hljs csharp">public static (String, String, int) Select_Decoder(List<<code>String</code>> message)
+                                                <code class="hljs csharp">public static (String, String, int) Select_Decoder(List<String> message)
 {
     throw new NotImplementedException("Not yet implemented");
 }
@@ -37126,7 +37167,7 @@ obj/
                                     <div class="card-body dark-body">
                                         <div class=card-text>
                                             <pre>
-                                                <code class="hljs csharp">public static IEnumerable<<code>int</code>> Tribonacci_Sequence(int n)
+                                                <code class="hljs csharp">public static IEnumerable<int> Tribonacci_Sequence(int n)
 {
     throw new NotImplementedException("Not yet implemented");
 }
@@ -38634,7 +38675,7 @@ private int Durability;
                     To do that correctly, you need to implement an indexer.<br>
                     <br>
                     The use of an indexer is simple.<br>
-                    If you can use indexes on an List<<code>T</code>>, it's because a List is a indexer.<br>
+                    If you can use indexes on an List<T>, it's because a List is a indexer.<br>
                     When you create an indexer, the important part is to create a method to get/set an element with it index.<br>
                     This file will use an array as a memory of the object.<br>
                     So the indexes used on the bag will be the same on the array of the memory.<br>
@@ -38806,7 +38847,7 @@ private int Capacity;
                                     <div class="card-body dark-body">
                                         <div class=card-text>
                                             <pre>
-                                                <code class="hljs csharp">public IEnumerable<<code>T</code>> Iterator()
+                                                <code class="hljs csharp">public IEnumerable<T> Iterator()
 {
     throw new NotImplementedException("Not yet implemented");
 }
@@ -38848,7 +38889,7 @@ private int Capacity;
                                     <li>The <code>int Energy</code> is the current energy of the character.</li>
                                     <li>The <code>int Food_need</code> is the need in energy for each action.</li>
                                     <li>The <code>int Strength</code> is the natural strenght of the character.</li>
-                                    <li>The <code>Bag<<code>Item</code>> Inventory</code> is using the Bag implementation to build an Item Inventory for the player.</li>
+                                    <li>The <code>Bag<Item> Inventory</code> is using the Bag implementation to build an Item Inventory for the player.</li>
                                     <li>The <code>int Carry_Weight</code> is the size of the bag.</li>
                                     <li>The <code>Item? Right_Hand</code> is the equip item of the character.</li>
                                 </ul>
@@ -38870,7 +38911,7 @@ private int Max_Energy;
 private int Energy;
 private int Food_Need;
 public int Strength;
-private Bag<<code>Item</code>> Inventory;
+private Bag<Item> Inventory;
 private int Carry_Weight;
 protected Item? Right_Hand;
 </code>
@@ -39212,7 +39253,7 @@ protected Item? Right_Hand;
                                     <div class="card-body dark-body">
                                         <div class=card-text>
                                             <pre>
-                                                <code class="hljs csharp">public IEnumerable<<code>Item</code>> Bag_iterator()
+                                                <code class="hljs csharp">public IEnumerable<Item> Bag_iterator()
 {
     throw new NotImplementedException("Not yet implemented");
 }
@@ -39849,7 +39890,7 @@ private int Y;
                                     <div class="card-body dark-body">
                                         <div class=card-text>
                                             <pre>
-                                                <code class="hljs csharp">private IEnumerable<<code>Item?</code>> Iterator ()
+                                                <code class="hljs csharp">private IEnumerable<Item?> Iterator ()
 {
     throw new NotImplementedException("Not yet implemented");
 }
@@ -39888,7 +39929,7 @@ private int Y;
                                     <div class="card-body dark-body">
                                         <div class=card-text>
                                             <pre>
-                                                <code class="hljs csharp">public void Update(List<<code>Enemy</code>> enemies, CharacterHard character)
+                                                <code class="hljs csharp">public void Update(List<Enemy> enemies, CharacterHard character)
 {
     throw new NotImplementedException("Not yet implemented");
 }
@@ -40029,7 +40070,7 @@ private int Y;
                             <div class=card-text>
                                 In this function, you have in argument the message of the Character data.<br>
                                 Each data is separated by a <code>\n</code>.<br>
-                                Your job here is to separate the date of the message String to fill a <code>List<<code>String</code>></code> with the data that you will return.<br>
+                                Your job here is to separate the date of the message String to fill a <code>List<String></code> with the data that you will return.<br>
                                 If the list doesn't have more than two elements, the size of the data is incorrect, you need to throw a <code>ArgumentException</code>.
                                 <br>
                                 <br>
@@ -40040,7 +40081,7 @@ private int Y;
                                     <div class="card-body dark-body">
                                         <div class=card-text>
                                             <pre>
-                                                <code class="hljs csharp">public static List<<code>String</code>> Separate(String message)
+                                                <code class="hljs csharp">public static List<String> Separate(String message)
 {
     throw new NotImplementedException("Not yet implemented");
 }
@@ -40147,7 +40188,7 @@ private int Y;
                                     <li>The <code>CharacterHard Player</code> is the Character of the player.</li>
                                     <li>The <code>String Action</code> is the most important attribut here because you'll need to parse it 
                                         to get the action that you want to do.</li>
-                                    <li>The <code>List<<code>Enemy</code>> Enemies</code> is the list of all the enemies that the player will encounter.</li>
+                                    <li>The <code>List<Enemy> Enemies</code> is the list of all the enemies that the player will encounter.</li>
                                     <li>The <code>int DayCount</code> is the number of day that the player have suceed to survive.</li>
                                     <li>The <code>Random Rand</code> is the Random number generator.</li>
                                 </ul>
@@ -40163,7 +40204,7 @@ private int Y;
                                                 <code class="hljs csharp">private Board Board;
 public CharacterHard Player;
 public String Action;
-private List<<code>Enemy</code>> Enemies;
+private List<Enemy> Enemies;
 private int DayCount;
 public Random Rand;
 </code>
@@ -40324,7 +40365,7 @@ public Random Rand;
                         </div>
                         <div class="card-body collapse" id=generated-div-uid-118>
                             <div class=card-text>
-                                Every enemy have the same shape. It has been given bellow.<br>
+                                every enemy have the same shape. It has been given bellow.<br>
                                 Use it to create n new enemies.<br>
                                 <br>
                                 The coordinates of each enemy should be random but you can't have two enemy with the same coordinate in the end.<br>
